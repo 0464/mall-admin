@@ -29,13 +29,13 @@
 			<div class="col">
 				<div class="form-group">
 					<label for="adminId">관리자 ID:</label>
-					<input id="adminId" class="form-control" type="text" name="adminId">
+					<input id="adminId" class="form-control" type="text" name="adminId" value="admin">
 				</div>
 			</div>
 			<div class="col">
 				<div class="form-group">
 					<label for="adminPw">관리자 PW:</label>
-					<input id="adminPw" class="form-control" type="password" name="adminPw">
+					<input id="adminPw" class="form-control" type="password" name="adminPw" value="1234">
 				</div>
 			</div>
 		</div>
