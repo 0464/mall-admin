@@ -31,7 +31,7 @@
 	Member member = memberDao.memberOne(memberEmail);
 %>
 <div>
-<div>
+<div><br>
 	<h1>고객 탈퇴</h1>
 </div>
 <div>
@@ -42,7 +42,8 @@
 		<p>탈퇴된 내용은 복구할 수 없습니다!</p>
 		<hr>
 		<div class="form-group">
-			<button class="btn btn-outline-dark btn-block" type="submit">고객 탈퇴</button>
+			<button class="btn btn-outline-danger" type="submit">고객 탈퇴</button>
+			<button class="btn btn-outline-dark" type="reset" onclick="location.href='/mall-admin/member/memberList.jsp'">취소</button>
 		</div>
 	</form>
 </div>

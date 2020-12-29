@@ -32,7 +32,7 @@
 	Product product = productDao.selectProductOne(productId);
 %>
 <div>
-<div>
+<div><br>
 	<h1>상품 삭제</h1>
 </div>
 <div>
@@ -43,7 +43,8 @@
 		<p>삭제된 내용은 복구할 수 없습니다!</p>
 		<hr>
 		<div class="form-group">
-			<button class="btn btn-outline-primary btn-block" type="submit">상품 삭제</button>
+			<button class="btn btn-outline-danger" type="submit">상품 삭제</button>
+			<button class="btn btn-outline-dark" type="reset" onclick="location.href='/mall-admin/product/productList.jsp'">취소</button>
 		</div>
 	</form>
 </div>

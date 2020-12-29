@@ -19,29 +19,28 @@
 <body>
 <div class="container">
 <p>
-<div>
-<div>
-	<h1>관리자 로그인</h1>
-</div>
-<div>
-	<form method="post" action="/mall-admin/loginAction.jsp">
-		<div class="row">
-			<div class="col">
-				<div class="form-group">
-					<label for="adminId">관리자 ID:</label>
-					<input id="adminId" class="form-control" type="text" name="adminId" value="admin">
-				</div>
-			</div>
-			<div class="col">
-				<div class="form-group">
-					<label for="adminPw">관리자 PW:</label>
-					<input id="adminPw" class="form-control" type="password" name="adminPw" value="1234">
-				</div>
-			</div>
-		</div>
-		<hr>
+<div class="row">
+<div class="col-4"></div>
+<div class="col-4" style="text-align:center">
+	<div>
+		<br><h1>관리자 로그인</h1><br>
+	</div>
+	<form class="was-validated" method="post" action="/mall-admin/loginAction.jsp">
 		<div class="form-group">
-			<button class="btn btn-outline-primary" type="submit">로그인</button>
+			<label for="adminId">관리자 ID</label>
+			<input id="adminId" class="form-control" type="text" name="adminId" value="admin" placeholder="admin" required>
+			<div class="valid-feedback"></div>
+      		<div class="invalid-feedback">ID를 입력해주세요.</div>
+		</div>
+	
+		<div class="form-group">
+			<label for="adminPw">관리자 PW</label>
+			<input id="adminPw" class="form-control" type="password" name="adminPw" placeholder="1234" required>
+			<div class="valid-feedback"></div>
+      		<div class="invalid-feedback">PW를 입력해주세요.</div>
+		</div><hr>
+		<div class="form-group">
+			<button class="btn btn-outline-primary" style="width:100%" type="submit">로그인</button>
 		</div>
 	</form>
 	<%
@@ -65,6 +64,7 @@
 		}
 	%>
 </div>
+<div class="col-4"></div>
 </div>
 </div>
 </body>

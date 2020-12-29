@@ -22,7 +22,7 @@
 	<jsp:include page="/inc/menu.jsp"></jsp:include>
 </div>
 <div>
-<div>
+<div><br>
 	<h1>관리자 메인 페이지</h1>
 </div>
 <div>
@@ -30,7 +30,7 @@
 	<img src="/mall-admin/image/sel.png">
 </p>
 <p>
-	쇼핑몰 관리용 페이지입니다
+	쇼핑몰 관리용 메인 페이지
 </p>
 </div>
 </div>

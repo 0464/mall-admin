@@ -22,9 +22,9 @@
 <div class="container">
 	<div>
 		<jsp:include page="/inc/menu.jsp"></jsp:include>
-	</div>
+	</div><br>
 	<h1>고객 목록</h1>
-	<table class="table table-bordered table-hover">
+	<table class="table table-hover">
 		<thead>
 			<tr>
 				<th>member_email</th>

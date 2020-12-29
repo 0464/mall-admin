@@ -30,13 +30,13 @@
 	OrdersAndProduct oap = ordersDao.selectOrdersAndProductOne(ordersId);
 %>
 <div>
-<div>
+<div><br>
 	<h1>상품 상세보기</h1>
 </div>
 <div>
 	<table class="table table-bordered table-hover">
 		<tr>
-			<th>orders_id</th>
+			<th style="width:200px">orders_id</th>
 			<td><%=oap.orders.ordersId %></td>
 		</tr>
 		<tr>
@@ -70,8 +70,11 @@
 	</table>
 	<hr>
 	<div class="row">
-		<div class="col-12">
+		<div class="col-3">
 			<a class="btn btn-outline-dark btn-block" href="/mall-admin/orders/editOrdersState.jsp?ordersId=<%=oap.orders.ordersId%>">order_state 수정</a>
+		</div>
+		<div class="col-3">
+			<button class="btn btn-outline-dark btn-block" type="reset" onclick="location.href='/mall-admin/product/productList.jsp'">취소</button>
 		</div>
 	</div>
 </div>

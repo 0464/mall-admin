@@ -46,20 +46,21 @@
 	Category category = categoryDao.selectCategoryOne(categoryId);
 %>
 <div>
-<div>
+<div><br>
 	<h1>카테고리 수정</h1>
 </div>
-<div>
+<div style="width:500px">
 	<form method="post" action="/mall-admin/category/editCategoryAction.jsp" id="editcategoryForm">
 		<input type="hidden" name="categoryId" value="<%=category.categoryId %>">
 		
 		<div class="form-group">
-			<label for="categoryName">category_name:</label>
+			<label for="categoryName">category_name</label>
 			<input id="categoryName" class="form-control" type="text" name="categoryName" value="<%=category.categoryName%>">
 		</div>
 		<hr>
 		<div class="form-group">
-			<button class="btn btn-outline-primary btn-block" type="button">카테고리 수정</button>
+			<button class="btn btn-outline-primary" type="button">카테고리 수정</button>
+			<button class="btn btn-outline-danger" type="reset" onclick="location.href='/mall-admin/category/categoryList.jsp'">취소</button>
 		</div>
 	</form>
 </div>

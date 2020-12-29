@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!-- 페이지의 상단 네비게이션으로 끼울 메뉴(페이지의 일부분만 구현한 JSP 파일) -->
 <!-- bootstrap class 사용 -->
-<nav class="navbar navbar-expand navbar-light bg-light">
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
 	<ul class="navbar-nav">
 		<li class="nav-item">
 			<a class="navbar-brand" href="/mall-admin/index.jsp">GoodeeShop</a>

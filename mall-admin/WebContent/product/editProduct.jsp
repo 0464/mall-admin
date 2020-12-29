@@ -34,7 +34,7 @@
 	ArrayList<Category> categoryList = categoryDao.selectCategoryList();
 %>
 <div>
-<div>
+<div><br>
 	<h1>상품 수정</h1>
 </div>
 <div>
@@ -73,7 +73,8 @@
 		</div>
 		<hr>
 		<div class="form-group">
-			<button class="btn btn-outline-primary btn-block" type="submit">상품 수정</button>
+			<button class="btn btn-outline-primary" type="submit">상품 수정</button>
+			<button class="btn btn-outline-dark" type="reset" onclick="location.href='/mall-admin/product/productList.jsp'">취소</button>
 		</div>
 	</form>
 </div>

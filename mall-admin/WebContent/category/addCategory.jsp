@@ -34,19 +34,20 @@
 	<jsp:include page="/inc/menu.jsp"></jsp:include>
 </div>
 <div>
-<div>
+<div><br>
 	<h1>카테고리 추가</h1>
 </div>
-<div>
+<div style="width:500px">
 	<form method="post" action="/mall-admin/category/addCategoryAction.jsp" id="addcategoryForm">
 		<div class="form-group">
-			<label for="categoryName">category_name:</label>
+			<label for="categoryName">category_name</label>
 			<input id="categoryName" class="form-control" type="text" name="categoryName" id="categoryName">
 			<span id="categoryNameHelper"></span>
 		</div>
 		<hr>
 		<div class="form-group">
-			<button class="btn btn-outline-dark btn-block" type="button" id="btn">카테고리 추가</button>
+			<button class="btn btn-outline-dark" type="button" id="btn">카테고리 추가</button>
+			<button class="btn btn-outline-danger" type="reset" onclick="location.href='/mall-admin/category/categoryList.jsp'">취소</button>
 		</div>
 	</form>
 </div>

@@ -52,7 +52,7 @@
 %>
 <div>
 <!-- 제목 시작 -->
-<div>
+<div><br>
 	<h1>상품 카테고리</h1>
 </div>
 <div>
@@ -70,13 +70,13 @@
 			</div>
 		</div>
 	</form>
-	<table class="table table-striped">
+	<table class="table table-hover">
 		<thead>
 			<tr>
 				<th>category_id</th>
 				<th>category_name</th>
-				<th>&nbsp;</th>
-				<th>&nbsp;</th>
+				<th style="width:150px">&nbsp;</th>
+				<th style="width:150px">&nbsp;</th>
 			</tr>
 		</thead>
 		<tbody>
@@ -94,8 +94,8 @@
 					<tr>
 						<td><%=c.categoryId %></td>
 						<td><%=c.categoryName %></td>
-						<td><a href="/mall-admin/category/editCategory.jsp?categoryId=<%=c.categoryId%>">수정</a></td>
-						<td><a href="/mall-admin/category/deleteCategory.jsp?categoryId=<%=c.categoryId%>">삭제</a></td>
+						<td><a class="btn btn-sm btn-outline-warning" href="/mall-admin/category/editCategory.jsp?categoryId=<%=c.categoryId%>">수정</a></td>
+						<td><a class="btn btn-sm btn-outline-danger" href="/mall-admin/category/deleteCategory.jsp?categoryId=<%=c.categoryId%>">삭제</a></td>
 					</tr>
 			<%
 				}

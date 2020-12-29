@@ -31,10 +31,10 @@
 	Category category = categoryDao.selectCategoryOne(categoryId);
 %>
 <div>
-<div>
+<div><br>
 	<h1>카테고리 삭제</h1>
 </div>
-<div>
+<div style="width:500px">
 	<form method="post" action="/mall-admin/category/deleteCategoryAction.jsp">
 		<input type="hidden" name="categoryId" value="<%=category.categoryId %>">
 		
@@ -42,7 +42,8 @@
 		<p>삭제된 내용은 복구할 수 없습니다!</p>
 		<hr>
 		<div class="form-group">
-			<button class="btn btn-outline-dark btn-block" type="submit">카테고리 삭제</button>
+			<button class="btn btn-outline-dark" type="submit">카테고리 삭제</button>
+			<button class="btn btn-outline-danger" type="reset" onclick="location.href='/mall-admin/category/categoryList.jsp'">취소</button>
 		</div>
 	</form>
 </div>

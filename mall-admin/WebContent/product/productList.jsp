@@ -51,10 +51,10 @@
 	}
 %>
 <div>
-<div>
+<div><br>
 	<h1>상품 목록</h1>
 </div>
-<div class="card-body">
+<div>
 	<ul class="pagination">
 		<%
 			// 검색한 카테고리가 없다면 전체 카테고리 표시 버튼의 색상을 강조
@@ -77,9 +77,9 @@
 					searchItemClasses = activeItemClasses;
 				}
 		%>
-				<li class="<%=searchItemClasses%>">
-					<a class="page-link" href="/mall-admin/product/productList.jsp?categoryId=<%=c.categoryId%>"><%=c.categoryName %></a>
-				</li>
+			<li class="<%=searchItemClasses%>">
+				<a class="page-link" href="/mall-admin/product/productList.jsp?categoryId=<%=c.categoryId%>"><%=c.categoryName %></a>
+			</li>
 		<%
 			}
 		%>
@@ -87,7 +87,7 @@
 	<table class="table">
 		<thead>
 			<tr>
-				<!-- <th>product_id</th> -->
+				<th>product_id</th>
 				<th>category_name</th>
 				<th>product_name</th>
 				<th>product_price</th>
@@ -99,9 +99,9 @@
 			<%
 				if (list.size() == 0) {
 			%>
-					<tr class="table-secondary">
-						<td colspan="5" style="text-align: center">상품 없음</td>
-					</tr>
+				<tr class="table-secondary">
+					<td colspan="6" style="text-align: center">상품 없음</td>
+				</tr>
 			<%
 				}
 				final String defaultLineClasses = "table-success";
@@ -116,12 +116,12 @@
 					}
 			%>
 					<tr class="<%=lineClasses%>">
-							<%=pac.product.productId %>
+						<td><%=pac.product.productId %></td>
 						<td><%=pac.category.categoryName %></td>
 						<td><%=pac.product.productName %></td>
 						<td><%=pac.product.productPrice %></td>
 						<td><%=soldoutText %></td>
-						<td><a href="/mall-admin/product/productOne.jsp?productId=<%=pac.product.productId%>">상세보기</a></td>
+						<td><a class="btn btn-sm btn-outline-dark" href="/mall-admin/product/productOne.jsp?productId=<%=pac.product.productId%>">상세보기</a></td>
 					</tr>
 			<%
 				}

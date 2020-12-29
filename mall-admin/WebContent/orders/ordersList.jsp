@@ -52,7 +52,7 @@
 	}
 %>
 <div>
-<div>
+<div><br>
 	<h1>주문 목록</h1>
 </div>
 <div>
@@ -133,7 +133,7 @@
 						<td><%=oap.orders.memberEmail %></td>
 						<!-- <td><%=oap.orders.ordersAddr %></td> -->
 						<td><%=oap.orders.ordersState %></td>
-						<td><a href="/mall-admin/orders/ordersOne.jsp?ordersId=<%=oap.orders.ordersId%>">상세보기</a></td>
+						<td><a class="btn btn-sm btn-outline-dark" href="/mall-admin/orders/ordersOne.jsp?ordersId=<%=oap.orders.ordersId%>">상세보기</a></td>
 					</tr>
 			<%
 				}

@@ -30,60 +30,56 @@
 		ArrayList<Category> categoryList = categoryDao.selectCategoryList();
 		%>
 		<div>
-			<div>
+			<div><br>
 				<h1>상품 추가</h1>
 			</div>
 			<div>
 				<form method="post"
 					action="/mall-admin/product/addProductAction.jsp">
 					<div class="form-group">
-						<label for="categoryId">category_id:</label> <select
-							id="categoryId" class="form-control" name="categoryId">
-							<option value="">카테고리 선택</option>
+						<label for="categoryId">category_id:</label>
+						<select id="categoryId" class="form-control" name="categoryId">
+						<option value="">카테고리 선택</option>
 							<%
 								for (Category c : categoryList) {
 							%>
-							<option value="<%=c.categoryId%>"><%=c.categoryName%></option>
+								<option value="<%=c.categoryId%>"><%=c.categoryName%></option>
 							<%
 								}
 							%>
 						</select>
 					</div>
 					<div class="form-group">
-						<label for="productName">product_name:</label> <input
-							id="productName" class="form-control" type="text"
-							name="productName">
+						<label for="productName">product_name:</label>
+						<input id="productName" class="form-control" type="text" name="productName">
 					</div>
 					<div class="form-group">
-						<label for="productPrice">product_price:</label> <input
-							id="productPrice" class="form-control" type="text"
-							name="productPrice">
+						<label for="productPrice">product_price:</label>
+						<input id="productPrice" class="form-control" type="text" name="productPrice">
 					</div>
 					<div class="form-group">
 						<label for="productContent">product_content:</label>
-						<textarea id="productContent" class="form-control" rows="5"
-							cols="80" name="productContent"></textarea>
+						<textarea id="productContent" class="form-control" rows="5" cols="80" name="productContent"></textarea>
 					</div>
 					<div class="form-group">
 						<div>
 							<label>product_soldout:</label>
 						</div>
 						<div class="form-check-inline">
-							<label class="form-check-label"> <input type="radio"
-								class="form-check-input" name="productSoldout" value="N"
-								checked="checked">판매중
+							<label class="form-check-label">
+							<input type="radio" class="form-check-input" name="productSoldout" value="N" checked="checked">판매중
 							</label>
 						</div>
 						<div class="form-check-inline">
-							<label class="form-check-label"> <input type="radio"
-								class="form-check-input" name="productSoldout" value="Y">품절
+							<label class="form-check-label">
+							<input type="radio" class="form-check-input" name="productSoldout" value="Y">품절
 							</label>
 						</div>
 					</div>
 					<hr>
 					<div class="form-group">
-						<button class="btn btn-outline-primary btn-block" type="submit">상품
-							추가</button>
+						<button class="btn btn-outline-primary" type="submit">상품추가</button>
+						<button class="btn btn-outline-dark" type="reset" onclick="location.href='/mall-admin/product/productList.jsp'">취소</button>
 					</div>
 				</form>
 			</div>
