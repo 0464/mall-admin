@@ -74,7 +74,7 @@
 			<a class="btn btn-outline-dark btn-block" href="/mall-admin/orders/editOrdersState.jsp?ordersId=<%=oap.orders.ordersId%>">order_state 수정</a>
 		</div>
 		<div class="col-3">
-			<button class="btn btn-outline-dark btn-block" type="reset" onclick="location.href='/mall-admin/product/productList.jsp'">취소</button>
+			<button class="btn btn-outline-dark btn-block" type="reset" onclick="location.href='/mall-admin/orders/ordersList.jsp'">취소</button>
 		</div>
 	</div>
 </div>
